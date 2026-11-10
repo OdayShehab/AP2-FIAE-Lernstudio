@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Offline-Lernstudio für die schriftliche AP2 FIAE. Deutsch lernen, auf Arabisch verstehen, selbst üben.">
+  <title>FIAE Lernstudio · AP2</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23172e29'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-weight='700' font-size='44' text-anchor='middle' fill='%23dbe5b9'%3Ef.%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="content.js"></script>
+  <script defer src="content-it.js"></script>
+  <script defer src="content-wiso.js"></script>
+  <script defer src="content-depth-core.js"></script>
+  <script defer src="content-depth-data.js"></script>
+  <script defer src="content-depth-systems.js"></script>
+  <script defer src="content-depth-wiso.js"></script>
+  <script defer src="content-exam-algorithmen-sql.js"></script>
+  <script defer src="content-exam-planung-uml-qualitaet.js"></script>
+  <script defer src="content-exam-wiso-komplett.js"></script>
+  <script defer src="content-simulations.js"></script>
+  <script defer src="content-katalog-index.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-scroll="main">Zum Inhalt springen</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home"><span class="brand-mark">f.</span><span>FIAE <b>Lernstudio</b><small>ABSCHLUSSPRÜFUNG · TEIL 2</small></span></a>
+    <p class="side-label">DEIN LERNRAUM</p>
+    <nav aria-label="Hauptnavigation" id="primary-nav">
+      <a href="#home" data-view="home"><span>◫</span> Übersicht</a>
+      <a href="#topics" data-view="topics"><span>▤</span> Alle Themen <small id="topic-count"></small></a>
+      <a href="#simulator" data-view="simulator"><span>⏱</span> Prüfungssimulator <small>9 Modelle</small></a>
+      <a href="#practice" data-view="practice"><span>✎</span> Prüfungstraining</a>
+      <a href="#review" data-view="review"><span>↻</span> Fehlerdiagnose <small id="review-count"></small></a>
+      <a href="#katalog" data-view="katalog"><span>✓</span> Katalog-Abdeckung</a>
+      <a href="#pruefungsindex" data-view="pruefungsindex"><span>📑</span> Prüfungsindex <small>Alt &amp; Prognose</small></a>
+      <a href="#formulas" data-view="formulas"><span>ƒ</span> Formeln &amp; Muster</a>
+      <a href="#glossary" data-view="glossary"><span>Aa</span> Fachbegriffe <small>DE / AR</small></a>
+    </nav>
+    <p class="side-label">THEMENBEREICHE</p>
+    <nav id="module-nav" aria-label="Themenbereiche"></nav>
+    <div class="side-bottom"><a href="#sources">↗ Quellen & Abdeckung</a><button id="export-progress">↓ Fortschritt sichern</button><button id="import-trigger">↑ Sicherung laden</button><input type="file" id="import-progress" accept="application/json" hidden><p>Offline. Ohne Konto.<br>Dein Fortschritt bleibt im Browser.</p></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <button class="icon-button mobile-menu" id="menu" aria-label="Navigation öffnen" aria-expanded="false">☰</button>
+      <div class="breadcrumb">LERNSTUDIO <span>/</span> <b id="crumb">Übersicht</b></div>
+      <div class="top-actions"><button id="language" title="Arabische Erläuterungen ein-/ausblenden" aria-pressed="true">DE <span>+ عربي</span></button><button class="icon-button" id="theme" aria-label="Dunklen Modus umschalten">◐</button></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer>FIAE AP2 · Persönliches Lernmaterial · Recherche: 05.11.2026 <span>Deutsch zuerst. بالعربية أوضح.</span></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>Bitte JavaScript aktivieren. Das Lernstudio arbeitet vollständig lokal und benötigt keine Internetverbindung.</noscript>
+</body>
+</html>
